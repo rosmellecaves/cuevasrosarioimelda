@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebFolio</title>
+<link rel="stylesheet" href="proj.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Projects -->
+    <div class="fullscreen-bg">
+      <video loop muted autoplay poster="/images/bgStandbyHome.png" class="fullscreen-bg__video">
+      <source src="/images/mainBG.mp4" type="video/mp4">
+          </video>
+          </div>
+          <navbar class="container">
+            <div class="navbar">
+              <img src = "images/logo.png" class="logo">
+                <nav>
+                  <ul id="menuList">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ME</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="projs.html">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT ME</a></li>
+                </ul>
+              </nav>
+                  <img src="/images/7.png" class="menu" onclick="togglemenu()">
+                  </div>
+          </navbar>
+          <section id="head">
+            <div class="title">
+                <p>My Projects History.&nbsp;</p>
+            </div>
+        </section>
+   <div class="start">
+     <ul>
+       <li>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="/images/pubmats/pb10.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">PUBMAT</h5>
+        <p class="card-text">These are my social media designs and pubmats for clients.&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <a href="#pubmats" class="btn btn-primary">VIEW MORE</a>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="/images/business/bs4.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">BUSINESS</h5>
+        <p class="card-text">My business pubmats I have been hired to do for a client for their cookie business.</p>
+        <a href="#business" class="btn btn-primary">VIEW MORE</a>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="/images/comms/cm5.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">COMMISSIONS</h5>
+        <p class="card-text">Some of my commission projects from my clients for their academic needs.</p>
+        <a href="#comms" class="btn btn-primary">VIEW MORE</a>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="/images/codes/cd6.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">PROGRAMMING</h5>
+        <p class="card-text">Here are some of my existing programming designs and projects from previous terms.</p>
+        <a href="#codes" class="btn btn-primary">VIEW MORE</a>
+      </div>
+    </div>
+  </li>
+  </ul>
+   </div>
+    <hr>
+    <div class="gallery">
+        <p>pubmat projects.</p>
+    <div id="pubmats">
+            <img src="/images/pubmats/pb1.png">
+            <img src="/images/pubmats/pb2.png">
+            <img src="/images/pubmats/pb3.png">
+            <img src="/images/pubmats/pb4.png">
+            <img src="/images/pubmats/pb5.png">
+            <img src="/images/pubmats/pb6.png">
+            <img src="/images/pubmats/pb7.png">
+            <img src="/images/pubmats/pb8.png">
+            <img src="/images/pubmats/pb9.png">
+            <img src="/images/pubmats/pb10.png">
+    </div>
+    <hr>
+    <P>business projects.</P>
+    <div id="business">
+            <img src="/images/business/bs1.png">
+            <img src="/images/business/bs3.png">
+            <img src="/images/business/bs4.png">
+            <img src="/images/business/bs5.png">
+            <img src="/images/business/bs6.png">
+            <img src="/images/business/bs7.png">
+            <img src="/images/business/bs8.png">
+            <img src="/images/business/bs9.png">
+            <img src="/images/business/bs2.png">
+    </div>
+    <hr>
+    <p>commission projects.</p>
+    <div id="comms">
+            <img src="/images/comms/cm1.png">
+            <img src="/images/comms/cm2.png">
+            <img src="/images/comms/cm3.png">
+            <img src="/images/comms/cm4.png">
+            <img src="/images/comms/cm5.png">
+    </div>
+    <hr>
+    <p>programming projects.</p>
+    <div id="codes">
+            <img src="/images/codes/cd1.png">
+            <img src="/images/codes/cd2.png">
+            <img src="/images/codes/cd3.png">
+            <img src="/images/codes/cd4.png">
+            <img src="/images/codes/cd5.png">
+    </div>
+</div>
+</div>
+</section>
+          <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight= "0px";
+            function togglemenu(){
+              if(menuList.style.maxHeight == "0px"){
+                  menuList.style.maxHeight = "200px";
+              }
+              else{
+                menuList.style.maxHeight = "0px";
+              }
+            }
+          </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            </body>
+        </html>
